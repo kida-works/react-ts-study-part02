@@ -1,5 +1,7 @@
 // import {Transition} from 'react-transition-group'
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Transition } from 'react-transition-group';
+
 
 
 type propsType = {
@@ -8,13 +10,11 @@ type propsType = {
 const AnimetionText  = (props: propsType) => {
   return (
     <>
-      <p id="test">
-        「
-        {/* <Transition> */}
-        {props.text}
-        {/* </Transition>」 */}
-        」
-      </p>
+      {/* <Transition> */}
+        <p className="text" >
+        <span id="text">{props.text}</span>
+        </p>
+      {/* </Transition> */}
     </>
   )
 }

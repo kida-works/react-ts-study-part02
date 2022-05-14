@@ -10,7 +10,7 @@ import "./contents.css"
 
 const Contents = () => {
   useEffect(()=>{
-    const test = document.getElementById("test")
+    const test = document.getElementById("text")
     scrollAnimetion(test)
     
   })
