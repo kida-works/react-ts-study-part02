@@ -1,5 +1,6 @@
 // Framer Motion使用
 import { motion } from "framer-motion";
+import AnimetionText from "./animetionText"
 // import css from "styled-jsx/css";
 
 
@@ -11,6 +12,7 @@ const Contents = () => {
             クリック
           </motion.button>
       </div>
+      <AnimetionText text="ノーゲームノーライフ"/>
     {/* {styles} */}
     </>
     
