@@ -1,0 +1,1 @@
+export {default as scrollAnimetion} from './functions/animetion.ts'
