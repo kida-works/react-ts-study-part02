@@ -20,6 +20,8 @@ const Contents = () => {
             クリック
         </motion.button>
           <AnimetionText text="ノーゲームノーライフ"/>
+          <div className="box"></div>
+          <AnimetionText text="とある科学の超電磁砲"/>
       </div>
      
     {/* {styles} */}
