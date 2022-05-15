@@ -3,17 +3,15 @@ import { motion } from "framer-motion";
 import AnimetionText from "./animetionText"
 import Header from "./Header";
 import { useEffect } from "react";
-import {scrollAnimetion} from './functions/animetion'
-import "./contents.css"
+import {scrollAnimetion} from './functions/animetion';
+import "./contents.scss";
 // import css from "styled-jsx/css";
 
 
+
 const Contents = () => {
-  useEffect(()=>{
-    const test = document.getElementById("text")
-    scrollAnimetion(test)
-    
-  })
+
+  
   return (
     <>
       <div className="test">

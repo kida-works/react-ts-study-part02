@@ -1,0 +1,54 @@
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  border: 1ps solid tomato;
+}
+.test{
+  padding: 300px;
+  height: 2000px;
+  font-size: 30px;
+  background-color: beige;
+  
+}
+.text01{
+  transition: 1s;
+  margin: 0 auto;
+  .innerText{
+    opacity: 0;
+    transition: 1s;
+    &::before{
+      content: "「";
+      display: inline-block;
+      opacity: 1;
+     
+    }
+    &::after{
+      content: "」";
+      display: inline-block;
+      opacity: 1;
+      
+    }
+  }
+}
+.text02{
+  width: auto;
+  .innerText{
+    opacity: 1;
+    transition: 1s;
+    &::before{
+      content: "「";
+      opacity: 1;
+      // transform: translateX(50%);
+    }
+    &::after{
+      content: "」";
+      opacity: 1;
+      
+    }
+  }
+}
+
