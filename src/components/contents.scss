@@ -15,40 +15,55 @@
   
 }
 .text01{
+  width: auto;
   transition: 1s;
   margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  &::before{
+    content: "「";
+    display: inline-block;
+    opacity: 1;
+    position: absolute;
+    right: 50%;
+    transition: 0.6s ease-out;
+    transform: translateX(50px);
+   
+  }
+  &::after{
+    content: "」";
+    display: inline-block;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transition: 0.6s ease-out;
+    transform: translateX(-50px);
+  }
   .innerText{
     opacity: 0;
-    transition: 1s;
-    &::before{
-      content: "「";
-      display: inline-block;
-      opacity: 1;
-     
-    }
-    &::after{
-      content: "」";
-      display: inline-block;
-      opacity: 1;
-      
-    }
+    transition: 2s;
+   
   }
 }
 .text02{
   width: auto;
+  &::before{
+    content: "「";
+    opacity: 1;
+    right: auto;
+    transform: translateX(-200%);
+  }
+  &::after{
+    content: "」";
+    opacity: 1;
+    left: auto;
+    right: 0;
+    transform: translateX(200%);
+    
+  }
   .innerText{
     opacity: 1;
-    transition: 1s;
-    &::before{
-      content: "「";
-      opacity: 1;
-      // transform: translateX(50%);
-    }
-    &::after{
-      content: "」";
-      opacity: 1;
-      
-    }
+   
   }
 }
 

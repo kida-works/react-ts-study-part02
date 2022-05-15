@@ -27,13 +27,13 @@ const AnimetionText  = (props: propsType) => {
     
   })
   return (
-    <>
+    <div>
       {/* <Transition> */}
         <p className={isFlag? "text01 text02":"text01"} >
-        <span className="innerText">{props.text}</span>
+          <span className="innerText">{props.text}</span>
         </p>
       {/* </Transition> */}
-    </>
+    </div>
   )
 }
 
