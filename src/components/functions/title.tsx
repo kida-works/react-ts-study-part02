@@ -5,10 +5,10 @@ type propsType ={
   hoge:boolean
 }
 const Title = (props:propsType) => {
-  console.log(props.hoge)
+  
   return(
     <>
-    <MainTitle hoge={props.hoge}>{props.title}</MainTitle>
+     <MainTitle hoge={props.hoge} size="50px">{props.title}</MainTitle>
     </>
   )
 }
@@ -17,13 +17,16 @@ export default Title
 
 type styleType = {
   hoge?:boolean
+  size?:string
 }
 
 const MainTitle = styled.h1<styleType>`
 color: ${(props) => props.hoge? "red": "pink"};
-border: 1px solid #000
+font-size: ${(props) => props.size};
+border: 1px solid #000;
 `
 
 MainTitle.defaultProps = {
-  hoge: false
+  hoge: false,
+  size: "10px"
 };
