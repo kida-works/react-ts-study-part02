@@ -8,7 +8,7 @@ const Title = (props:propsType) => {
   console.log(props.hoge)
   return(
     <>
-    <MainTitle>{props.title}</MainTitle>
+    <MainTitle hoge={props.hoge}>{props.title}</MainTitle>
     </>
   )
 }
@@ -23,3 +23,7 @@ const MainTitle = styled.h1<styleType>`
 color: ${(props) => props.hoge? "red": "pink"};
 border: 1px solid #000
 `
+
+MainTitle.defaultProps = {
+  hoge: false
+};
