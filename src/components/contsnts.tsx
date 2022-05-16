@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import AnimetionText from "./animetionText"
 import Header from "./Header";
+import Title from "./functions/title";
 import { useEffect } from "react";
 import {scrollAnimetion} from './functions/animetion';
 import "./contents.scss";
@@ -16,6 +17,7 @@ const Contents = () => {
     <>
       <div className="test">
         <Header />
+        <Title title="title"  />
         <motion.button whileTap={{ scale: 1.5 }} >
             クリック
         </motion.button>
