@@ -17,7 +17,7 @@ export const scrollAnimetion = (items:any, isFlagFunction:any) => {
   // 要素が表示されたら実行する動作
   function showElement(){
     isFlagFunction(true)
-    console.log("test");
+    // console.log("test");
     
    
   };

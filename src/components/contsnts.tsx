@@ -17,7 +17,7 @@ const Contents = () => {
     <>
       <div className="test">
         <Header />
-        <Title title="title"  />
+        <Title title="title" hoge={false} />
         <motion.button whileTap={{ scale: 1.5 }} >
             クリック
         </motion.button>
